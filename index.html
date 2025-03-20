@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resturant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero">
+         <!-- Header -->
+         <header class="header">
+            <div class="nav-logo">
+                <img src="logo.png" alt="Logo" class="logo">
+                <h1>स्वाद भवन </h1>
+                <p><br>("House of Taste")</p>
+            </div>
+            
+            <div class="nav-container"> <!-- Added div to group menu and icon -->
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Home 🏡</a></li>
+                    <li><a href="#menu" class="nav-link">Our Menu 🧾</a></li>
+                    <li><a href="#about" class="nav-link">Why Us? 📲</a></li>
+                </ul>
+                <div class="menu-icon">
+                    <img src="menu2.png" alt="Menu Icon">
+                </div>
+            </div>
+        </header>
+        
+
+        <section id="home" >
+            <div class="row">
+              <div class="col">
+                <h1>A taste that fills not just the stomach but also the heart!😋</h1>
+                <!-- Order Now Button linking to WhatsApp -->
+                <a href="https://api.whatsapp.com/send?phone=+919334220508&text=I'm%20interested%20in%20placing%20an%20order." class="order-btn">Order Now</a>
+              </div>
+              <div class="col">
+                <img src="pic1.png" class="feature-img" alt="Featured Food">
+                <img src="pic2.png" class="thumbnail-img" alt="Food Thumbnail">
+              </div>
+            </div>
+          </section>
+    
+    <!-- Special Section -->
+    <section class="highlight-section">
+        <div class="highlight-content">
+            <img src="tea.jpg" alt="Delicious Food" class="highlight-img">
+            <div class="highlight-text">
+                <h2>One Thing You <span class="highlight">Can't Miss!</span></h2>
+                <p>Experience the best taste with our freshly made, delicious Samosa with Tea crafted just for you. Don't miss out on an unforgettable culinary journey.</p>
+                <button class="add-to-cart">ADD TO CART</button>
+            </div>
+        </div>
+    </section>
+    
+        <!-- Menu Section -->
+        <section id="menu" class="hero min-h-screen flex items-center justify-center px-4 text-center relative">
+        <section class="menu">
+            <h2 class="menu-title">Our Menu</h2>
+            <div class="menu-filters">
+                <button class="filter-btn active" data-category="all">ALL</button>
+                <button class="filter-btn" data-category="drink">DRINK</button>
+                <button class="filter-btn" data-category="dessert">DESSERTS</button>
+                <button class="filter-btn" data-category="burgers">BURGERS</button>
+                <button class="filter-btn" data-category="pizza">PIZZA</button>
+                <button class="filter-btn" data-category="Special">Our Special</button>
+            </div>
+            <div class="menu-items">
+                <div class="menu-card" data-category="Special">
+                    <div class="image-container">
+                        <img src="samosa.jpg" alt="Samosa">
+                        <span class="rating">4.7⭐</span>
+                    </div>
+                    <h3>Indian Samosa</h3>
+                    <p>Hot and spicy Indian samosa served with dipping hari chutney.</p>
+                    <span class="price">₹ 15</span>
+                    <button class="add-to-cart">ADD TO CART</button>
+                </div>
+                <div class="menu-card" data-category="Special">
+                    <div class="image-container">
+                        <img src="kachori.jpg" alt="Raj Kachori">
+                        <span class="rating">4.7⭐</span>
+                    </div>
+                    <h3>Raj Kachori</h3>
+                    <p>Crispy on the outside, Royal on the inside — Experience true regal taste.</p>
+                    <span class="price">₹ 45</span>
+                    <button class="add-to-cart">ADD TO CART</button>
+                </div>
+                <div class="menu-card" data-category="Special">
+                    <div class="image-container">
+                        <img src="kachori2.jpg" alt="Indian Street Kachori">
+                        <span class="rating">4.7⭐</span>
+                    </div>
+                    <h3>Indian Street Kachori</h3>
+                    <p>Crunch meets spice — Our street-style kachori is your passport to flavor heaven.</p>
+                    <span class="price">₹ 30</span>
+                    <button class="add-to-cart">ADD TO CART</button>
+                </div>
+                <div class="menu-card" data-category="Special">
+                    <div class="image-container">
+                        <img src="jalebi.jpg" alt="Ghee Jalebi with Rabdi">
+                        <span class="rating">4.9⭐</span>
+                    </div>
+                    <h3>Ghee Jalebi with Rabdi</h3>
+                    <p>Twisted in shape, straight to your heart — Enjoy our luscious Jalebi.</p>
+                    <span class="price">₹ 45</span>
+                    <button class="add-to-cart">ADD TO CART</button>
+                </div>
+                <div class="menu-card" data-category="burgers">
+                    <div class="image-container">
+                        <img src="burger.jpg" alt="Deluxe Cheeseburger">
+                        <span class="rating">4.2⭐</span>
+                    </div>
+                    <h3>Deluxe Cheeseburger</h3>
+                    <p>Hot and super tasty cheeseburger with dipping sauce.</p>
+                    <span class="price">₹ 80</span>
+                    <button class="add-to-cart">ADD TO CART</button>
+                </div>
+                <div class="menu-card" data-category="pizza">
+                    <div class="image-container">
+                        <img src="pic6.webp" alt="Deluxe CheesePizza">
+                        <span class="rating">4.5⭐</span>
+                    </div>
+                    <h3>Deluxe CheesePizza</h3>
+                    <p>A mouthwatering cheese pizza with premium ingredients.</p>
+                    <span class="price">₹ 250</span>
+                    <button class="add-to-cart">ADD TO CART</button>
+                </div>
+                <div class="menu-card" data-category="pizza">
+                    <div class="image-container">
+                        <img src="pic9.jpg" alt="Veggie Pizza">
+                        <span class="rating">4.7⭐</span>
+                    </div>
+                    <h3>Veggie Pizza</h3>
+                    <p>Delicious pizza with assorted toppings.</p>
+                    <span class="price">₹ 180</span>
+                    <button class="add-to-cart">ADD TO CART</button>
+                </div>
+                <div class="menu-card" data-category="dessert">
+                    <div class="image-container">
+                        <img src="icecreame.jpg" alt="Ice Cream">
+                        <span class="rating">4.8⭐</span>
+                    </div>
+                    <h3>Ice Cream</h3>
+                    <p>Creamy ice cream in various flavors.</p>
+                    <span class="price">₹ 60</span>
+                    <button class="add-to-cart">ADD TO CART</button>
+                </div>
+                <div class="menu-card" data-category="drink">
+                    <div class="image-container">
+                        <img src="coke.jpg" alt="Coca Cola">
+                        <span class="rating">4.5⭐</span>
+                    </div>
+                    <h3>Coca Cola</h3>
+                    <p>Refreshing cold drink.</p>
+                    <span class="price">₹ 35</span>
+                    <button class="add-to-cart">ADD TO CART</button>
+                </div>
+                <div class="menu-card" data-category="dessert">
+                    <div class="image-container">
+                        <img src="cake.jpg" alt="Chocolate Cake">
+                        <span class="rating">4.8⭐</span>
+                    </div>
+                    <h3>Chocolate Cake</h3>
+                    <p>Decadent chocolate cake perfect for dessert lovers.</p>
+                    <span class="price">₹ 420</span>
+                    <button class="add-to-cart">ADD TO CART</button>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="hero min-h-screen flex items-center justify-center px-4 text-center relative">
+        <section class="about-section">
+            <h2 class="about-title">About Us</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="dot"></div>
+                    <h3 class="timeline-title">Why Us?</h3>
+                    <p><br>At <b>स्वाद भवन</b>, we take pride in delivering high-quality, flavorful dishes made with love. Our commitment to fresh ingredients, exceptional taste, and outstanding service makes us stand out. Whether you're here for a quick bite or a memorable dining experience, we ensure every meal is worth savoring.</p>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="dot"></div>
+                    <h3 class="timeline-title">Location & Timing !</h3>
+                    <p><br> 🏠 Connaught Place , New Delhi , India <br> <br> ⌛ 8:00 AM - 10:00 PM</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="dot"></div>
+                    <h3 class="timeline-title">Contact</h3>
+                    <p><br>📧 houseoftaste@gmail.com <br> <br> 📞 +91 9334220508 </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+        <!-- footer Section --> 
+    <footer class="footer">
+            <div class="footer-container">
+                <!-- Left Section: Logo & Description-->
+                <div class="footer-left">
+                    <img src="logo.png" alt="स्वाद भवन Logo" class="footer-logo">
+                    <div>
+                        <h2 class="footer-title">स्वाद भवन</h2>
+                        <p>"रुचियों का संगम, स्वाद भवन के संग!" </p> 
+                        <p class="footer-description">Providing Delicious Food since 2025</p>
+                        <p>© 2025 <strong>स्वाद भवन</strong> | All Rights Reserved</p>
+                    </div>
+                </div>
+        
+                <!-- Center Section: Social Media -->
+                <div class="footer-social">
+                    <h3 class="footer-heading">Social</h3>
+                    <p>Connect with us on social media:</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/priyanshu0494" class="social-btn linkedin">LinkedIn</a>
+                        <a href="https://github.com/priyanshu494mishra" class="social-btn github">GitHub</a>
+                        <a href="https://www.instagram.com/brahmanpriyanshu_" class="social-btn instagram">Instagram</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+
+        
+         <!-- JS Section -->      
+        <script src="script.js"></script>
+    
+</body>
+</html>
